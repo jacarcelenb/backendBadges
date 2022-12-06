@@ -1,0 +1,94 @@
+import mongoose from 'mongoose';
+import model from '../core/model.js';
+import cryptService from '../../services/crypt.service.js';
+import {InvalidCredentialsException, UserNotFoundException} from '../exceptions.js';
+
+const crypt = cryptService();
+
+const usersSchema = new mongoose.Schema({
+  full_name: {
+    type: String,
+    required: true
+  },
+  identification: {
+    type: String,
+    required: true
+  },
+  country: {
+    type: String,
+    required: true
+  },
+  country_state: {
+    type: String
+  },
+  email: {
+    type: String,
+    required: true
+  },
+  password: {
+    type: String,
+    required: true,
+    select: false
+  },
+  affiliation: {
+    type: String
+  },
+  phone: {
+    type: String
+  },
+  status: {
+    type: String,
+    enum: ['active', 'inactive'],
+    default: 'active'
+  },
+  profile: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'user_profiles',
+    default: null
+  },
+  gender: {
+    type: String,
+    required: true
+  },
+  website: {
+    type: String,
+    required: true
+  }
+
+}, {collection: 'users', timestamps: true});
+
+export const users = mongoose.model('users', usersSchema);
+
+const users_crud = model(users);
+
+const create_user = users_crud.create;
+
+users_crud.create = async (body = {}) => {
+  const password = await crypt.encrypt(body.password);
+  const user = await create_user({
+    ...body,
+    password
+  });
+
+  return user;
+};
+
+users_crud.comparePassword = async function comparePassword (email, password) {
+  const data = await users_crud.find({email}, {
+    select: 'email password'
+  });
+  if (!data.length) {
+    throw new UserNotFoundException();
+  }
+
+  const user = data[0];
+  const isMatch = await crypt.compare(password, user.password);
+
+  if (!isMatch) {
+    throw new InvalidCredentialsException();
+  }
+
+  return users_crud.find({email});
+};
+
+export default users_crud;

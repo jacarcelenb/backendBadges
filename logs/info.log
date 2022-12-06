@@ -1,0 +1,3 @@
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2022-12-06T21:18:23.849Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2022-12-06T21:18:23.860Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2022-12-06T21:22:48.360Z"}
