@@ -15,6 +15,7 @@ export default {
       user: user_id,
       experimenter_roles: body.experimenter_roles,
       experiment: body.experiment,
+      admin_experiment: body.admin_experiment,
       corresponding_autor: body.corresponding_autor
     });
 

@@ -14,6 +14,7 @@ const experimentersSchema = new mongoose.Schema({
     type: mongoose.Types.ObjectId,
     ref: 'experiments'
   },
+  admin_experiment:{type: Boolean,required: true, default: false},
   corresponding_autor: {type: Boolean, required: true, default: false},
 }, {collection: 'experimenters'});
 

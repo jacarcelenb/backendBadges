@@ -53,7 +53,9 @@ export default {
     await experimentersModel.create({
       user,
       experimenter_roles,
-      experiment: experiment._id
+      experiment: experiment._id,
+      admin_experiment: false,
+      corresponding_autor: false
     });
 
     return experiment;
