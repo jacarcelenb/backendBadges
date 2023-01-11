@@ -5,3 +5,13 @@
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2022-12-15T06:10:49.028Z"}
 {"level":"error","message":"ValidationError: file_content: Path `file_content` is required. ValidationError: file_content: Path `file_content` is required.","timestamp":"2022-12-15T07:20:39.051Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2022-12-15T08:08:23.138Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2022-12-15T13:11:30.851Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2022-12-16T14:53:48.989Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2022-12-16T21:25:13.143Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2022-12-16T21:25:31.560Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2022-12-16T21:38:00.263Z"}
+{"level":"error","message":"ValidationError: artifact_purpose: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_purpose\" because of \"BSONTypeError\", artifact_class: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_class\" because of \"BSONTypeError\", artifact_type: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_type\" because of \"BSONTypeError\", file_size: Path `file_size` is required., file_format: Path `file_format` is required. ValidationError: artifact_purpose: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_purpose\" because of \"BSONTypeError\", artifact_class: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_class\" because of \"BSONTypeError\", artifact_type: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_type\" because of \"BSONTypeError\", file_size: Path `file_size` is required., file_format: Path `file_format` is required.","timestamp":"2022-12-16T22:13:20.268Z"}
+{"level":"error","message":"ValidationError: file_size: Path `file_size` is required., file_format: Path `file_format` is required. ValidationError: file_size: Path `file_size` is required., file_format: Path `file_format` is required.","timestamp":"2022-12-16T22:17:43.981Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-01-09T18:06:44.602Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-01-10T21:55:10.281Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-01-11T19:16:45.679Z"}

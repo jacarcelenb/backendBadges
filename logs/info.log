@@ -23,3 +23,29 @@
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2022-12-15T06:39:03.580Z"}
 {"level":"error","message":"ValidationError: file_content: Path `file_content` is required. ValidationError: file_content: Path `file_content` is required.","timestamp":"2022-12-15T07:20:39.051Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2022-12-15T08:08:23.138Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2022-12-15T13:06:53.300Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2022-12-15T13:06:53.314Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2022-12-15T13:11:30.851Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2022-12-16T00:08:22.190Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2022-12-16T00:08:22.208Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2022-12-16T13:45:39.991Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2022-12-16T13:45:40.016Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2022-12-16T14:44:38.720Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2022-12-16T14:44:38.727Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2022-12-16T14:53:48.989Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2022-12-16T20:19:12.273Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2022-12-16T20:19:12.284Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2022-12-16T21:25:13.143Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2022-12-16T21:25:31.560Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2022-12-16T21:38:00.263Z"}
+{"level":"error","message":"ValidationError: artifact_purpose: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_purpose\" because of \"BSONTypeError\", artifact_class: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_class\" because of \"BSONTypeError\", artifact_type: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_type\" because of \"BSONTypeError\", file_size: Path `file_size` is required., file_format: Path `file_format` is required. ValidationError: artifact_purpose: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_purpose\" because of \"BSONTypeError\", artifact_class: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_class\" because of \"BSONTypeError\", artifact_type: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_type\" because of \"BSONTypeError\", file_size: Path `file_size` is required., file_format: Path `file_format` is required.","timestamp":"2022-12-16T22:13:20.268Z"}
+{"level":"error","message":"ValidationError: file_size: Path `file_size` is required., file_format: Path `file_format` is required. ValidationError: file_size: Path `file_size` is required., file_format: Path `file_format` is required.","timestamp":"2022-12-16T22:17:43.981Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-01-09T17:54:42.700Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-01-09T17:54:42.726Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-01-09T18:06:44.602Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-01-10T19:25:02.874Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-01-10T19:25:02.891Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-01-10T21:55:10.281Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-01-11T17:27:44.555Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-01-11T17:27:44.562Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-01-11T19:16:45.679Z"}
