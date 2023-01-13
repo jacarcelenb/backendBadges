@@ -7,6 +7,8 @@ const tasksSchema = new mongoose.Schema({
   start_date: {type: Date, required: true},
   end_date: {type: Date, required: true},
   duration: {type: String, required: true},
+  needsArtifact: {type: boolean},
+  levelArtifact: {type: String},
   responsible: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'experimenter_roles',
