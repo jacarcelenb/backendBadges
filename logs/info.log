@@ -206,3 +206,75 @@
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-02T16:22:26.223Z"}
 {"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-02T17:26:30.652Z"}
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-02T17:26:30.657Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-02T18:56:05.536Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-02T18:56:05.543Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-02T20:04:17.338Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-02T20:45:30.596Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-02T20:45:30.601Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-02T22:42:01.424Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-02T22:42:19.994Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-02T22:42:20.000Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-03T00:26:13.664Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-03T00:26:13.673Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-03T01:34:20.412Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-03T02:43:38.875Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-03T02:43:38.880Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-03T05:05:03.278Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-03T05:05:03.287Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-03T05:50:44.358Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-03T05:50:54.299Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-03T05:50:54.305Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-03T06:31:28.512Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-03T11:50:31.379Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-03T11:50:31.384Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-03T12:26:04.229Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-03T12:40:54.491Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-03T12:40:54.499Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-03T12:51:18.446Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-03T17:02:52.351Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-03T17:02:52.357Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-04T00:50:37.085Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-04T00:50:37.091Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-04T20:13:16.446Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-04T20:13:16.453Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"artifacts\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"artifacts\"","timestamp":"2023-02-04T22:05:25.599Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-05T00:47:16.583Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-05T00:47:28.961Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-05T00:47:28.966Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-05T11:17:15.441Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-05T11:17:15.448Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_acm\" because of \"BSONTypeError\" CastError: Cast to ObjectId failed for value \"\" (type string) at path \"artifact_acm\" because of \"BSONTypeError\"","timestamp":"2023-02-05T12:26:01.646Z"}
+{"level":"error","message":"ValidationError: standard: Cast to ObjectId failed for value \"\" (type string) at path \"standard\" because of \"BSONTypeError\" ValidationError: standard: Cast to ObjectId failed for value \"\" (type string) at path \"standard\" because of \"BSONTypeError\"","timestamp":"2023-02-05T12:26:01.720Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\"","timestamp":"2023-02-05T12:33:08.290Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\"","timestamp":"2023-02-05T12:34:42.120Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-05T12:34:57.496Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-05T12:35:07.918Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-05T12:35:07.926Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\"","timestamp":"2023-02-05T12:35:14.142Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\"","timestamp":"2023-02-05T12:36:49.710Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"_id\" for model \"evaluations\"","timestamp":"2023-02-05T12:39:08.430Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-05T13:06:15.206Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-05T21:07:22.821Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-05T21:07:22.826Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-05T23:30:33.733Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-02-06T11:05:10.338Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-02-06T11:05:10.345Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:49:14.737Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:50:04.218Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:50:37.124Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:51:09.223Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:51:19.695Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:51:23.381Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:52:28.128Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:53:30.802Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:54:02.855Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:54:26.804Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:56:01.825Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:56:20.239Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:56:49.026Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:56:49.065Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:58:56.843Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T11:58:56.876Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T12:00:33.500Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-02-06T12:00:33.524Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-06T12:11:25.004Z"}

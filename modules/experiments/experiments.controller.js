@@ -54,7 +54,7 @@ export default {
       user,
       experimenter_roles,
       experiment: experiment._id,
-      admin_experiment: false,
+      admin_experiment: true,
       corresponding_autor: false
     });
 
