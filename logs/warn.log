@@ -116,3 +116,7 @@
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-07T22:32:29.558Z"}
 {"level":"error","message":"ValidationError: profile: Cast to ObjectId failed for value \"\" (type string) at path \"profile\" because of \"BSONTypeError\", full_name: Path `full_name` is required., identification: Path `identification` is required., country: Path `country` is required., email: Path `email` is required., gender: Path `gender` is required., website: Path `website` is required. ValidationError: profile: Cast to ObjectId failed for value \"\" (type string) at path \"profile\" because of \"BSONTypeError\", full_name: Path `full_name` is required., identification: Path `identification` is required., country: Path `country` is required., email: Path `email` is required., gender: Path `gender` is required., website: Path `website` is required.","timestamp":"2023-02-08T02:08:50.516Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-08T02:52:54.058Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-08T19:32:30.732Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-09T22:04:50.946Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-10T19:05:53.503Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-13T19:04:34.415Z"}
