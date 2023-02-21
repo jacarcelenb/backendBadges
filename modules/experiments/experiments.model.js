@@ -42,11 +42,11 @@ const experimentsSchema = new mongoose.Schema({
   },
   country: {
     type: String,
-    required: true
+    default: "No se registra"
   },
   country_state: {
     type: String,
-    required: true
+    default: "No se registra"
   },
   objective: {
     type: String,
@@ -71,7 +71,7 @@ const experimentsSchema = new mongoose.Schema({
   },
   reason: {
     type: String,
-    default: null
+    default: "No se registra"
   },
   has_scripts: {type: Boolean, required: true, default: false},
   has_software: {type: Boolean, required: true, default: false},

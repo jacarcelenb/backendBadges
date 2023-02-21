@@ -16,7 +16,7 @@ const usersSchema = new mongoose.Schema({
   },
   country: {
     type: String,
-    required: true
+    default: "No se registra"
   },
   country_state: {
     type: String
@@ -27,7 +27,6 @@ const usersSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true,
     select: false
   },
   affiliation: {
@@ -52,7 +51,7 @@ const usersSchema = new mongoose.Schema({
   },
   website: {
     type: String,
-    required: true
+    default:"No se registra"
   }
 
 }, {collection: 'users', timestamps: true});
