@@ -12,7 +12,7 @@ const usersSchema = new mongoose.Schema({
   },
   identification: {
     type: String,
-    required: true
+    default: "No se registra"
   },
   country: {
     type: String,
@@ -30,10 +30,12 @@ const usersSchema = new mongoose.Schema({
     select: false
   },
   affiliation: {
-    type: String
+    type: String,
+    default: "No se registra"
   },
   phone: {
-    type: String
+    type: String,
+    default: "No se registra"
   },
   status: {
     type: String,
