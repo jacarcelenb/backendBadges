@@ -2,6 +2,10 @@ import mongoose from 'mongoose';
 import model from '../core/model.js';
 
 const groupsSchema = new mongoose.Schema({
+  numParticipants: {
+    type: Number,
+    required: true
+  },
   description: {
     type: String,
     required: true
