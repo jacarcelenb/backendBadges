@@ -290,3 +290,6 @@
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-02-24T01:47:02.302Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-02T21:47:12.068Z"}
 {"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'find') TypeError: Cannot read properties of undefined (reading 'find')","timestamp":"2023-03-06T20:46:43.519Z"}
+{"level":"error","message":"ValidationError: numParticipants: Path `numParticipants` is required. ValidationError: numParticipants: Path `numParticipants` is required.","timestamp":"2023-03-09T00:43:27.470Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-09T01:05:08.847Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-10T22:01:02.939Z"}

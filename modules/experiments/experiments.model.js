@@ -75,7 +75,8 @@ const experimentsSchema = new mongoose.Schema({
   },
   has_scripts: {type: Boolean, required: true, default: false},
   has_software: {type: Boolean, required: true, default: false},
-  has_source_code: {type: Boolean, required: true, default: false}
+  has_source_code: {type: Boolean, required: true, default: false},
+  completed: {type: Boolean,  default: false}
 }, {collection: 'experiments', timestamps: true});
 
 const experiments = mongoose.model('experiments', experimentsSchema);
