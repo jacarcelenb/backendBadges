@@ -329,3 +329,6 @@
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-15T03:08:11.013Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-15T03:31:57.075Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-15T03:42:41.576Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-15T12:00:55.403Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-15T12:19:45.763Z"}
+{"level":"error","message":"ReferenceError: emailLink is not defined ReferenceError: emailLink is not defined","timestamp":"2023-03-15T21:42:31.165Z"}

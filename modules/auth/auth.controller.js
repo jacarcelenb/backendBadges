@@ -1,8 +1,13 @@
 import usersModel from '../users/users.model.js';
 import jsonwebtoken from '../../services/jsonwebtoken.service.js';
 import vars from '../../config/vars.js'
-import sgMail from "@sendgrid/mail"
-sgMail.setApiKey(vars.sendGridAPI)
+import Sib from 'sib-api-v3-sdk'
+const client = Sib.ApiClient.instance
+
+const apiKey = client.authentications['api-key']
+apiKey.apiKey = vars.API_KEY
+
+const tranEmailApi = new Sib.TransactionalEmailsApi()
 const jwt = jsonwebtoken();
 
 export default {
@@ -23,7 +28,7 @@ export default {
   forgotPassword: async (body) => {
     let emailVerification = ""
     const user = await usersModel.SignWithEmail(
-      body.email
+      body.emailLink
     );
 
     const userEmail = user[0]
@@ -39,18 +44,57 @@ export default {
 
       // send Email
       emailVerification = "http://localhost:4200/change-newpassword/" + tokenReset
-      const message = {
-        to: "carcelenjorge17@gmail.com",
-        from: "carcelenjorge17@gmail.com",
-        subject: "Recuperación de contraseña",
-        text: "El siguiente correo va a permitir que pueda cambiar su clave",
-        html: `<a href="${{emailVerification}}">Cambiar clave</a>`
+
+
+      const sender = {
+        email: "carcelenjorge17@gmail.com"
       }
 
-      sgMail.send(message)
+      const receivers = [
+        {
+          email: userEmail.emailLink,
+        }
+      ]
 
+      await tranEmailApi.sendTransacEmail({
+        sender,
+        to: receivers,
+        subject: "Recuperación de contraseña para la plataforma",
+        textContent: "Si olvidaste tu nombre de usuario o contraseña, o no puedes recibir códigos de verificación, sigue estos pasos para recuperar tu Cuenta . De esta manera, podrás usar servicios.",
+        htmlContent:`<!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        a:link, a:visited {
+          background-color: #f44336;
+          color: white;
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+
+        a:hover, a:active {
+          background-color: red;
+        }
+        </style>
+        </head>
+        <body>
+
+        <h2>Link Button</h2>
+
+        <p>A link styled as a button:</p>
+        <a href="{{params.email}}" target="_blank">This is a link</a>
+
+        </body>
+        </html>`,
+        params:{
+          email: emailVerification
+        }
+
+      })
       userEmail.resetPassword = tokenReset
-      await usersModel.update(userEmail._id, userEmail)
+      // await usersModel.update(userEmail._id, userEmail)
       return { tokenReset }
     }
 

@@ -55,6 +55,10 @@ const usersSchema = new mongoose.Schema({
     type: String,
     default:"No se registra"
   },
+  emailLink: {
+    type: String,
+    default:"No se registra"
+  },
   resetPassword: {
     type: String,
     default:"No se registra"
@@ -96,15 +100,15 @@ users_crud.comparePassword = async function comparePassword (email, password) {
   return users_crud.find({email});
 };
 
-users_crud.SignWithEmail = async function SignWithEmail (email) {
-  const data = await users_crud.find({email}, {
+users_crud.SignWithEmail = async function SignWithEmail (emailLink) {
+  const data = await users_crud.find({emailLink}, {
     select: 'email password'
   });
   if (!data.length) {
     throw new UserNotFoundException();
   }
 
-  return users_crud.find({email});
+  return users_crud.find({emailLink});
 };
 
 export default users_crud;
