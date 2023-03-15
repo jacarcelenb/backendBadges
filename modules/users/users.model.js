@@ -54,6 +54,10 @@ const usersSchema = new mongoose.Schema({
   website: {
     type: String,
     default:"No se registra"
+  },
+  resetPassword: {
+    type: String,
+    default:"No se registra"
   }
 
 }, {collection: 'users', timestamps: true});
@@ -87,6 +91,17 @@ users_crud.comparePassword = async function comparePassword (email, password) {
 
   if (!isMatch) {
     throw new InvalidCredentialsException();
+  }
+
+  return users_crud.find({email});
+};
+
+users_crud.SignWithEmail = async function SignWithEmail (email) {
+  const data = await users_crud.find({email}, {
+    select: 'email password'
+  });
+  if (!data.length) {
+    throw new UserNotFoundException();
   }
 
   return users_crud.find({email});

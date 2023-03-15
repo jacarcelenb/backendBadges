@@ -7,3 +7,10 @@ export const loginSchema = {
     password: Joi.string().required()
   }
 };
+
+export const ResetPasswordSchema = {
+  body: {
+    email: Joi.string().email().
+    required(),
+  }
+};

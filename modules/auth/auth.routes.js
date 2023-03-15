@@ -1,5 +1,6 @@
 import authController from './auth.controller.js';
 import {loginSchema} from './auth.schemas.js';
+import { ResetPasswordSchema } from './auth.schemas.js';
 
 export default [
   {
@@ -7,5 +8,11 @@ export default [
     method: 'post',
     schema: loginSchema,
     handler: authController.login
+  },
+  {
+    path: '/auth/forgotpassword',
+    method: 'post',
+    schema: ResetPasswordSchema,
+    handler: authController.forgotPassword
   }
 ];

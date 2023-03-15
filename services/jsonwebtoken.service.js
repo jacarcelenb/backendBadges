@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken';
 
 const jsonwebtoken = () => {
   const secret = vars.jwtSecret;
+  const resettoken= vars.resetToken
 
   return {
     sign: (payload = {}) => {
@@ -13,7 +14,17 @@ const jsonwebtoken = () => {
     },
     decode: (token) => {
       return jwt.verify(token, secret);
-    }
+    },
+     resetPassword:(payload = {}) => {
+      return jwt.sign(payload, resettoken, {
+        expiresIn: '1200000ms',
+        algorithm: 'HS256'
+      });
+    },
+    verifyTokenReset:(token) => {
+      return jwt.verify(token, resettoken);
+    },
+
   };
 };
 
