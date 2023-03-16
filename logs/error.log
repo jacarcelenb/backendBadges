@@ -341,3 +341,8 @@
 {"level":"error","message":"Error: Unauthorized Error: Unauthorized","timestamp":"2023-03-16T01:08:54.045Z"}
 {"level":"error","message":"Error: Unauthorized Error: Unauthorized","timestamp":"2023-03-16T01:09:30.229Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T01:12:04.321Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T01:49:33.375Z"}
+{"level":"error","message":"Error: Unauthorized Error: Unauthorized","timestamp":"2023-03-16T01:52:43.585Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T01:54:47.890Z"}
+{"level":"error","message":"Error: Unauthorized Error: Unauthorized","timestamp":"2023-03-16T01:55:01.157Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T01:56:52.520Z"}

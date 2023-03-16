@@ -61,34 +61,58 @@ export default {
         to: receivers,
         subject: "Recuperación de contraseña para la plataforma",
         textContent: "Si olvidaste tu nombre de usuario o contraseña, o no puedes recibir códigos de verificación, sigue estos pasos para recuperar tu Cuenta . De esta manera, podrás usar servicios.",
-        htmlContent:`<!DOCTYPE html>
+        htmlContent: `<!DOCTYPE html>
         <html>
         <head>
         <style>
         a:link, a:visited {
-          background-color: #f44336;
+          background-color: royalblue;
           color: white;
           padding: 14px 25px;
           text-align: center;
           text-decoration: none;
           display: inline-block;
+          font-family:Arial
         }
 
         a:hover, a:active {
-          background-color: red;
+          background-color: blue;
+           color: white;
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+        p {
+        font-family:Arial;
+        }
+
+        div {
+           background-color:#f2f2f2;
+           text-align: center;
+           padding-top:5px;
+           padding-bottom:30px;
+           border-radius: 1cm;
+           border: 6px solid royalblue;
+           height: 10cm;
+        }
+
+        h2 {
+         font-family:Arial;
         }
         </style>
         </head>
         <body>
-
-        <h2>Link Button</h2>
-
-        <p>A link styled as a button:</p>
-        <a href="{{params.email}}" target="_blank">This is a link</a>
+        <div>
+           <h2>Estimado usuario:</h2>
+           <img src="https://res.cloudinary.com/utn-csoft/image/upload/v1678931181/badgeGo-icon_kcs0by.svg" width="180" height="180" />
+        <p>Por favor haga clic en el siguiente botón para cambiar su contraseña</p>
+        <a href="{{params.email}}" target="_blank">&#128512; Recuperar contraseña</a>
+        </div>
 
         </body>
         </html>`,
-        params:{
+        params: {
           email: emailVerification
         }
 
