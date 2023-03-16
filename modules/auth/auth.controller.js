@@ -1,13 +1,8 @@
 import usersModel from '../users/users.model.js';
 import jsonwebtoken from '../../services/jsonwebtoken.service.js';
 import vars from '../../config/vars.js'
-import Sib from 'sib-api-v3-sdk'
-const client = Sib.ApiClient.instance
-
-const apiKey = client.authentications['api-key']
-apiKey.apiKey = vars.API_KEY
-
-const tranEmailApi = new Sib.TransactionalEmailsApi()
+import sgMail from '@sendgrid/mail'
+sgMail.setApiKey(vars.API_KEY)
 const jwt = jsonwebtoken();
 
 export default {
@@ -45,87 +40,24 @@ export default {
       // send Email
       emailVerification = "http://localhost:4200/change-newpassword/" + tokenReset
 
-
-      const sender = {
-        email: "carcelenjorge17@gmail.com"
+      const msg = {
+        to: userEmail.emailLink, // Change to your recipient
+        from: 'carcelenjorge17@gmail.com', // Change to your verified sender
+        subject: 'Sending with SendGrid is Fun',
+        text: 'and easy to do anywhere, even with Node.js',
+        html: '<strong>and easy to do anywhere, even with Node.js</strong>',
       }
+      sgMail
+        .send(msg)
+        .then(() => {
+          console.log('Email sent')
+        })
+        .catch((error) => {
+          console.error(error)
+        })
 
-      const receivers = [
-        {
-          email: userEmail.emailLink,
-        }
-      ]
-
-      await tranEmailApi.sendTransacEmail({
-        sender,
-        to: receivers,
-        subject: "Recuperación de contraseña para la plataforma",
-        textContent: "Si olvidaste tu nombre de usuario o contraseña, o no puedes recibir códigos de verificación, sigue estos pasos para recuperar tu Cuenta . De esta manera, podrás usar servicios.",
-        htmlContent: `<!DOCTYPE html>
-        <html>
-        <head>
-        <style>
-        a {
-          background-color: royalblue;
-          color: white;
-          padding: 14px 25px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-family:Arial
-        }
-
-        a:hover {
-          background-color: blue;
-           color: white;
-          padding: 14px 25px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-        }
-        p {
-        font-family:Arial;
-        }
-
-        div {
-           background-color:#f2f2f2;
-           text-align: center;
-           padding-top:5px;
-           padding-bottom:30px;
-           border-radius: 1cm;
-        }
-
-        h2 {
-         font-family:Arial;
-        }
-
-
-        </style>
-        </head>
-        <body>
-
-        <div>
-           <h2>Estimado usuario:</h2>
-
-
-        <p>Por favor haga clic en el siguiente enlace para cambiar su contraseña</p>
-
-
-        <a href="{{params.email}}" target="_blank">&#128512; Recuperar contraseña</a>
-        </div>
-
-
-
-        </body>
-        </html>`,
-        params: {
-          email: emailVerification,
-          image: "https://res.cloudinary.com/utn-csoft/image/upload/v1678931181/badgeGo-icon_kcs0by.svg"
-        }
-
-      })
       userEmail.resetPassword = tokenReset
-      // await usersModel.update(userEmail._id, userEmail)
+      await usersModel.update(userEmail._id, userEmail)
       return { tokenReset }
     }
 
