@@ -65,7 +65,7 @@ export default {
         <html>
         <head>
         <style>
-        a:link, a:visited {
+        a {
           background-color: royalblue;
           color: white;
           padding: 14px 25px;
@@ -75,7 +75,7 @@ export default {
           font-family:Arial
         }
 
-        a:hover, a:active {
+        a:hover {
           background-color: blue;
            color: white;
           padding: 14px 25px;
@@ -93,27 +93,34 @@ export default {
            padding-top:5px;
            padding-bottom:30px;
            border-radius: 1cm;
-           border: 6px solid royalblue;
-           height: 10cm;
         }
 
         h2 {
          font-family:Arial;
         }
+
+
         </style>
         </head>
         <body>
+
         <div>
            <h2>Estimado usuario:</h2>
-           <img src="https://res.cloudinary.com/utn-csoft/image/upload/v1678931181/badgeGo-icon_kcs0by.svg" width="180" height="180" />
-        <p>Por favor haga clic en el siguiente botón para cambiar su contraseña</p>
+
+
+        <p>Por favor haga clic en el siguiente enlace para cambiar su contraseña</p>
+
+
         <a href="{{params.email}}" target="_blank">&#128512; Recuperar contraseña</a>
         </div>
+
+
 
         </body>
         </html>`,
         params: {
-          email: emailVerification
+          email: emailVerification,
+          image: "https://res.cloudinary.com/utn-csoft/image/upload/v1678931181/badgeGo-icon_kcs0by.svg"
         }
 
       })
