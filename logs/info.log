@@ -1056,3 +1056,18 @@
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-15T22:14:36.971Z"}
 {"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-03-15T22:14:43.041Z"}
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-15T22:14:43.045Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-15T22:19:00.214Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-03-16T01:07:13.962Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-16T01:07:13.967Z"}
+{"level":"error","message":"Error: Unauthorized Error: Unauthorized","timestamp":"2023-03-16T01:07:23.842Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-03-16T01:08:26.525Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-16T01:08:26.535Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-03-16T01:08:45.966Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-16T01:08:45.970Z"}
+{"level":"error","message":"Error: Unauthorized Error: Unauthorized","timestamp":"2023-03-16T01:08:54.045Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-03-16T01:09:10.937Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-16T01:09:10.941Z"}
+{"level":"error","message":"Error: Unauthorized Error: Unauthorized","timestamp":"2023-03-16T01:09:30.229Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T01:12:04.321Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-03-16T01:12:10.745Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-16T01:12:10.749Z"}
