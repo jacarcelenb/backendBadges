@@ -14,5 +14,12 @@ export default [
     method: 'post',
     schema: ResetPasswordSchema,
     handler: authController.forgotPassword
+  },
+  {
+    path: '/auth/changenewpassword',
+    method: 'post',
+    schema: ResetPasswordSchema,
+    handler: authController.changeForgotPassword
   }
+
 ];

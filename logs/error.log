@@ -346,3 +346,22 @@
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T01:54:47.890Z"}
 {"level":"error","message":"Error: Unauthorized Error: Unauthorized","timestamp":"2023-03-16T01:55:01.157Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T01:56:52.520Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T12:17:12.919Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T15:48:32.327Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T17:13:26.444Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T17:20:03.097Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T18:04:06.560Z"}
+{"level":"error","message":"TypeError: jwt.verify is not a function TypeError: jwt.verify is not a function","timestamp":"2023-03-16T18:20:24.682Z"}
+{"level":"error","message":"TypeError: cryptService.encrypt is not a function TypeError: cryptService.encrypt is not a function","timestamp":"2023-03-16T18:21:07.806Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2023-03-16T18:22:31.373Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2023-03-16T18:23:25.723Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2023-03-16T18:24:32.360Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2023-03-16T18:26:10.823Z"}
+{"level":"error","message":"CastError: Cast to string failed for value \"Promise { <pending> }\" (type Promise) at path \"password\" CastError: Cast to string failed for value \"Promise { <pending> }\" (type Promise) at path \"password\"","timestamp":"2023-03-16T18:27:19.536Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2023-03-16T18:28:55.938Z"}
+{"level":"error","message":"Error: _id is required Error: _id is required","timestamp":"2023-03-16T18:30:26.926Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T18:30:38.377Z"}
+{"level":"error","message":"MongooseError: Invalid update pipeline operator: \"_id\" MongooseError: Invalid update pipeline operator: \"_id\"","timestamp":"2023-03-16T18:38:13.820Z"}
+{"level":"error","message":"JsonWebTokenError: jwt must be provided JsonWebTokenError: jwt must be provided","timestamp":"2023-03-16T20:54:08.956Z"}
+{"level":"error","message":"JsonWebTokenError: jwt must be provided JsonWebTokenError: jwt must be provided","timestamp":"2023-03-16T20:55:17.446Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-16T21:13:41.024Z"}
