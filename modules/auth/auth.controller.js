@@ -25,7 +25,7 @@ export default {
   forgotPassword: async (body) => {
     let email = ""
     const user = await usersModel.SignWithEmail(
-      body.emailLink
+      body.email
     );
 
     const userEmail = user[0]
@@ -43,7 +43,7 @@ export default {
       email = "http://localhost:4200/changepassword/" + tokenReset
 
       const msg = {
-        to: userEmail.emailLink, // Change to your recipient
+        to: userEmail.email, // Change to your recipient
         from: 'carcelenjorge17@gmail.com', // Change to your verified sender
         subject: 'Recuperación de contraseña',
         templateId: 'd-ae1af7fa445f48a6977c0eac24cc0268',

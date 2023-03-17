@@ -100,15 +100,15 @@ users_crud.comparePassword = async function comparePassword (email, password) {
   return users_crud.find({email});
 };
 
-users_crud.SignWithEmail = async function SignWithEmail (emailLink) {
-  const data = await users_crud.find({emailLink}, {
+users_crud.SignWithEmail = async function SignWithEmail (email) {
+  const data = await users_crud.find({email}, {
     select: 'email password'
   });
   if (!data.length) {
     throw new UserNotFoundException();
   }
 
-  return users_crud.find({emailLink});
+  return users_crud.find({email});
 };
 
 export default users_crud;

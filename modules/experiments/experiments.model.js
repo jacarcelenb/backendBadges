@@ -4,23 +4,23 @@ import model from '../core/model.js';
 const gqm_objective_schema = new mongoose.Schema({
   objective_analyze: {
     type: String,
-    required: true
+    default:"No se registra"
   },
   with_purpose: {
     type: String,
-    required: true
+    default:"No se registra"
   },
   with_respect_that: {
     type: String,
-    required: true
+    default:"No se registra"
   },
   with_viewpoint: {
     type: String,
-    required: true
+    default:"No se registra"
   },
   in_the_context_of: {
     type: String,
-    required: true
+    default:"No se registra"
   }
 });
 
