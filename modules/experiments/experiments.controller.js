@@ -71,6 +71,9 @@ export default {
       _id
     );
 
+  }, getAllExperiments: async() =>{
+      const experiments = await experimentsModel.find();
+      return experiments
   }
 
 };

@@ -8,6 +8,12 @@ export default [
     handler: experimentsController.getExperiments
   },
   {
+    path: '/allexperiments',
+    method: 'get',
+    private: true,
+    handler: experimentsController.getAllExperiments
+  },
+  {
     path: '/count_experiments',
     method: 'get',
     private: true,
