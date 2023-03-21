@@ -20,6 +20,12 @@ export default [
     method: 'post',
     schema: ResetPasswordSchema,
     handler: authController.changeForgotPassword
-  }
+  },
+  {
+    path: '/auth/verifyEmail',
+    method: 'post',
+    schema: ResetPasswordSchema,
+    handler: authController.validateEmail
+  },
 
 ];

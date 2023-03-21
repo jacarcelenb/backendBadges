@@ -111,4 +111,14 @@ users_crud.SignWithEmail = async function SignWithEmail (email) {
   return users_crud.find({email});
 };
 
+users_crud.ValidateEmail = async function ValidateEmail (email) {
+  const data = await users_crud.find({email}, {
+    select: 'email password'
+  });
+  if (!data.length) {
+    return "OK"
+  }
+  return "Error";
+
+};
 export default users_crud;

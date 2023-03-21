@@ -89,4 +89,13 @@ export default {
 
     return 'OK';
   },
+  validateEmail: async (body) => {
+    const data = await usersModel.ValidateEmail(
+      body.email
+    );
+
+    const user = data
+
+    return { user };
+  },
 };
