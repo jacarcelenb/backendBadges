@@ -20,17 +20,9 @@ export default {
       return [];
     }
 
-    const experiments = await experimentsModel.find(
-      {
-        _id: {
-          $in: experiments_of_user
-        },
-        ...filter
-      },
-      options
-    );
 
-    return experiments;
+
+    return experiments_of_user;
   },
   experimentsCount: async (filter, options) => {
     const experiments = await experimentsModel.find(
