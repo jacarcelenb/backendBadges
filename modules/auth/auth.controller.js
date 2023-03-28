@@ -40,7 +40,7 @@ export default {
       });
 
       // send Email
-      email = "http://localhost:4200/changepassword/" + tokenReset
+      email = "https://badge-go-project/changepassword/" + tokenReset
 
       const msg = {
         to: userEmail.email, // Change to your recipient
