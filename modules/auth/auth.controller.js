@@ -40,7 +40,7 @@ export default {
       });
 
       // send Email
-      email = "https://badge-go-project/changepassword/" + tokenReset
+      email = "https://badge-go-project.netlify.app/changepassword/" + tokenReset
 
       const msg = {
         to: userEmail.email, // Change to your recipient
