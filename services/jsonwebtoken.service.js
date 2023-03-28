@@ -17,7 +17,7 @@ const jsonwebtoken = () => {
     },
      resetPassword:(payload = {}) => {
       return jwt.sign(payload, resettoken, {
-        expiresIn: '1200000ms',
+        expiresIn: '900000ms',
         algorithm: 'HS256'
       });
     },
