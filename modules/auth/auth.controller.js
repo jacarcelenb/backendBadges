@@ -1,9 +1,12 @@
 import usersModel from '../users/users.model.js';
 import jsonwebtoken from '../../services/jsonwebtoken.service.js';
 import vars from '../../config/vars.js'
-import sgMail from '@sendgrid/mail'
+import SibApiV3Sdk from "sib-api-v3-sdk"
+const client = SibApiV3Sdk.ApiClient.instance
+const apiKey = client.authentications['api-key']
+apiKey.apiKey = process.env.APIKEY_SENDMAIL
 import cryptService from '../../services/crypt.service.js';
-sgMail.setApiKey(vars.API_KEY)
+
 const jwt = jsonwebtoken();
 const crypt = cryptService();
 
@@ -42,23 +45,20 @@ export default {
       // send Email
       email = "https://badge-go-project.netlify.app/changepassword/" + tokenReset
 
-      const msg = {
-        to: userEmail.email, // Change to your recipient
-        from: 'carcelenjorge17@gmail.com', // Change to your verified sender
-        subject: 'Recuperación de contraseña',
-        templateId: 'd-ae1af7fa445f48a6977c0eac24cc0268',
-        dynamicTemplateData: {
-          emailVerification: email,
+
+      await new SibApiV3Sdk.TransactionalEmailsApi().sendTransacEmail(
+        {
+          'subject':subject,
+          'sender' : {'email':'carcelenjorge17@gmail.com', 'name':'BadgeGO'},
+          'to' : [{'name': userEmail.full_name, 'email': userEmail.mail}],
+           'templateId':3,
+          'params' : {'emailVerification':email}
         }
-      }
-      await sgMail
-        .send(msg)
-        .then(() => {
-          console.log('Email sent')
-        })
-        .catch((error) => {
-          console.error(error)
-        })
+      ).then(function(data) {
+        console.log(data);
+      }, function(error) {
+        console.error(error);
+      });
 
       userEmail.resetPassword = tokenReset
       await usersModel.update(userEmail._id, userEmail)
