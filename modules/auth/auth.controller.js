@@ -32,7 +32,8 @@ export default {
     );
 
     const userEmail = user[0]
-
+    console.log(userEmail);
+    console.log(process.env.APIKEY_SENDMAIL)
     if (userEmail.length == 0) {
       return "Correo electronico no encontrado"
     } else {
