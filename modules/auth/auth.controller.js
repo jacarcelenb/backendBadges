@@ -49,7 +49,7 @@ export default {
         {
           'subject':'Cambio de clave',
           'sender' : {'email':'carcelenjorge17@gmail.com', 'name':'BadgeGO'},
-          'to' : [{'name': userEmail.full_name, 'email': userEmail.mail}],
+          'to' : [{'name': userEmail.full_name, 'email': userEmail.email}],
            'templateId':3,
           'params' : {'emailVerification':email}
         }

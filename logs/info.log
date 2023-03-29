@@ -1499,3 +1499,6 @@
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-29T22:17:14.317Z"}
 {"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-03-29T22:21:20.464Z"}
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-29T22:21:20.477Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-03-29T22:21:37.504Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-03-29T22:21:37.521Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-29T22:24:26.763Z"}
