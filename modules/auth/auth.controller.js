@@ -30,10 +30,8 @@ export default {
     const user = await usersModel.SignWithEmail(
       body.email
     );
-
     const userEmail = user[0]
-    console.log(userEmail);
-    console.log(process.env.APIKEY_SENDMAIL)
+
     if (userEmail.length == 0) {
       return "Correo electronico no encontrado"
     } else {
@@ -49,7 +47,7 @@ export default {
 
       await new SibApiV3Sdk.TransactionalEmailsApi().sendTransacEmail(
         {
-          'subject':subject,
+          'subject':'Cambio de clave',
           'sender' : {'email':'carcelenjorge17@gmail.com', 'name':'BadgeGO'},
           'to' : [{'name': userEmail.full_name, 'email': userEmail.mail}],
            'templateId':3,
