@@ -56,7 +56,7 @@ export default {
       ).then(function(data) {
         console.log(data);
       }, function(error) {
-        console.error(error);
+        console.log(error);
       });
 
       userEmail.resetPassword = tokenReset
