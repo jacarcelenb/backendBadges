@@ -12,13 +12,8 @@ const crypt = cryptService();
 
 export default {
   login: async (body) => {
-    const data = await usersModel.comparePassword(
-      body.email,
-      body.password
-    );
-
+    const data = await usersModel.find({email:body.email} );
     const user = data[0];
-
     const token = jwt.sign({
       user: user._id
     });
