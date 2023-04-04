@@ -55,7 +55,7 @@ const usersSchema = new mongoose.Schema({
     type: String,
     default:"No se registra"
   },
-  emailLink: {
+  userphoto: {
     type: String,
     default:"No se registra"
   },
