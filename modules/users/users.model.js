@@ -59,6 +59,10 @@ const usersSchema = new mongoose.Schema({
     type: String,
     default:"No se registra"
   },
+  file_location_path: {
+    type: String,
+    default:"No se registra"
+  },
   resetPassword: {
     type: String,
     default:"No se registra"
