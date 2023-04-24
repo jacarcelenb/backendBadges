@@ -1514,3 +1514,46 @@
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-04T22:33:28.421Z"}
 {"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-05T00:44:15.981Z"}
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-05T00:44:16.004Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-11T00:05:08.266Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-11T00:05:08.282Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-11T12:02:33.629Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-11T12:02:33.648Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-11T12:19:21.349Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-11T12:25:57.284Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-11T12:25:57.292Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"groups\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"groups\"","timestamp":"2023-04-11T12:44:34.982Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-04-11T12:44:34.996Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"artifacts\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"artifacts\"","timestamp":"2023-04-11T12:44:35.007Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"tasks\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"tasks\"","timestamp":"2023-04-11T12:44:35.015Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-11T13:24:42.880Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-11T18:19:52.154Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-11T18:19:52.180Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-11T22:01:00.621Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-15T20:33:28.848Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-15T20:33:28.854Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-15T20:55:47.552Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-16T20:35:14.484Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-16T20:35:14.490Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-17T20:36:41.898Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-17T20:36:41.906Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-17T21:46:15.354Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-17T21:46:15.359Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-17T21:47:40.522Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-19T00:43:22.061Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-19T00:43:22.070Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-19T13:27:06.561Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-19T13:27:06.570Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-19T19:34:16.138Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-19T19:34:16.146Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-19T21:34:22.252Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-20T19:10:44.575Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-20T19:10:44.591Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-22T21:46:24.828Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-22T21:46:24.841Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-22T22:40:36.548Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-23T00:48:26.089Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-23T00:48:26.094Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-23T17:24:27.828Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-23T17:24:27.843Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-04-24T19:47:18.021Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-04-24T19:47:18.026Z"}

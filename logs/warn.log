@@ -370,3 +370,14 @@
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-19T01:57:11.030Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-24T12:21:22.241Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-03-29T22:24:26.763Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-11T12:19:21.349Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"groups\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"groups\"","timestamp":"2023-04-11T12:44:34.982Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"experimenters\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"experimenters\"","timestamp":"2023-04-11T12:44:34.996Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"artifacts\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"artifacts\"","timestamp":"2023-04-11T12:44:35.007Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"tasks\" CastError: Cast to ObjectId failed for value \"null\" (type string) at path \"experiment\" for model \"tasks\"","timestamp":"2023-04-11T12:44:35.015Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-11T13:24:42.880Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-11T22:01:00.621Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-15T20:55:47.552Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-17T21:47:40.522Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-19T21:34:22.252Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-04-22T22:40:36.548Z"}
