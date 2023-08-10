@@ -63,8 +63,9 @@ export default {
       _id
     );
 
-  }, getAllExperiments: async() =>{
-      const experiments = await experimentsModel.find();
+  }, getAllExperiments: async(filter, options) =>{
+      const experiments = await experimentsModel.find(filter
+        , options);
       return experiments
   }
 

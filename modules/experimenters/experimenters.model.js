@@ -16,7 +16,7 @@ const experimentersSchema = new mongoose.Schema({
   },
   admin_experiment:{type: Boolean,required: true, default: false},
   corresponding_autor: {type: Boolean, required: true, default: false},
-}, {collection: 'experimenters'});
+}, {collection: 'experimenters',timestamps: true});
 
 export const experimenters = mongoose.model('experimenters', experimentersSchema);
 
