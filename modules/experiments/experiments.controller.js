@@ -64,8 +64,7 @@ export default {
     );
 
   }, getAllExperiments: async(filter, options) =>{
-      const experiments = await experimentsModel.find(filter
-        , options);
+      const experiments = await experimentsModel.find(filter, options);
       return experiments
   }
 
