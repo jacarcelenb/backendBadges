@@ -57,7 +57,6 @@ const usersSchema = new mongoose.Schema({
   },
   userphoto: {
     type: String,
-    default:"No se registra"
   },
   file_location_path: {
     type: String,

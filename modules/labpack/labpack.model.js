@@ -27,6 +27,10 @@ const LabPackSchema = new mongoose.Schema({
         type: String,
         required:true
     }
+    ,
+    published:{
+        type: Boolean,
+    }
 }, {collection: 'labpack', timestamps: true})
 
 const labpacks = mongoose.model('labpack', LabPackSchema);

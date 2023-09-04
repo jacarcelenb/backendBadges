@@ -6,19 +6,26 @@ const client = SibApiV3Sdk.ApiClient.instance
 const apiKey = client.authentications['api-key']
 apiKey.apiKey = process.env.APIKEY_SENDMAIL
 import cryptService from '../../services/crypt.service.js';
+import users_crud from '../users/users.model.js';
 
 const jwt = jsonwebtoken();
 const crypt = cryptService();
 
 export default {
   login: async (body) => {
-    const data = await usersModel.find({email:body.email} );
-    const user = data[0];
+    const data = await users_crud.comparePassword(body.email, body.password);
+    const user= data[0]
     const token = jwt.sign({
       user: user._id
     });
+    const logged = body.email ==  user.email;
+    if (logged) {
+      return { token, user };
+    }else {
+      return {'message':"User not found", 'status': 404}
+    }
 
-    return { token, user };
+
   },
   forgotPassword: async (body) => {
     let email = ""
