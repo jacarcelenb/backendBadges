@@ -16,12 +16,6 @@ export default [
     handler: authController.forgotPassword
   },
   {
-    path: '/auth/changenewpassword',
-    method: 'post',
-    schema: ResetPasswordSchema,
-    handler: authController.changeForgotPassword
-  },
-  {
     path: '/auth/verifyEmail',
     method: 'post',
     schema: ResetPasswordSchema,

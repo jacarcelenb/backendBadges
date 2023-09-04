@@ -2663,3 +2663,20 @@
 {"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-09-04T17:44:36.427Z"}
 {"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-09-04T17:44:36.432Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-09-04T17:50:12.324Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-09-04T18:07:44.945Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-09-04T18:07:44.972Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-09-04T18:09:44.128Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-09-04T18:09:44.141Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-09-04T18:10:07.576Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-09-04T18:10:07.597Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-09-04T18:10:42.724Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-09-04T18:10:42.732Z"}
+{"level":"error","message":"TypeError: changeUserPassword.then is not a function TypeError: changeUserPassword.then is not a function","timestamp":"2023-09-04T18:10:54.124Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-09-04T18:11:40.467Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-09-04T18:11:40.477Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-09-04T18:11:52.241Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-09-04T18:11:52.250Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-09-04T18:11:56.892Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-09-04T18:11:56.904Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-09-04T18:13:31.507Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-09-04T18:13:31.518Z"}
