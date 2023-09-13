@@ -28,6 +28,10 @@ const LabPackSchema = new mongoose.Schema({
         required:true
     }
     ,
+    package_url:{
+        type: String,
+    }
+    ,
     published:{
         type: Boolean,
     }

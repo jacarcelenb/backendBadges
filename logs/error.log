@@ -532,3 +532,12 @@
 {"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'token') TypeError: Cannot read properties of undefined (reading 'token')","timestamp":"2023-09-04T17:32:27.538Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-09-04T17:50:12.324Z"}
 {"level":"error","message":"TypeError: changeUserPassword.then is not a function TypeError: changeUserPassword.then is not a function","timestamp":"2023-09-04T18:10:54.124Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-09-04T18:17:30.732Z"}
+{"level":"error","message":"ObjectParameterError: Parameter \"filter\" to find() must be an object, got cruz@us.es ObjectParameterError: Parameter \"filter\" to find() must be an object, got cruz@us.es","timestamp":"2023-09-09T21:27:15.359Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-09-09T21:33:18.856Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading '_id') TypeError: Cannot read properties of undefined (reading '_id')","timestamp":"2023-09-11T19:17:37.776Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-09-11T19:19:46.871Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading '_id') TypeError: Cannot read properties of undefined (reading '_id')","timestamp":"2023-09-11T19:25:16.045Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading '_id') TypeError: Cannot read properties of undefined (reading '_id')","timestamp":"2023-09-11T19:26:28.791Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading '_id') TypeError: Cannot read properties of undefined (reading '_id')","timestamp":"2023-09-11T19:27:11.139Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-09-13T20:09:52.475Z"}

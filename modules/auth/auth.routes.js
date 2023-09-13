@@ -20,6 +20,11 @@ export default [
     method: 'post',
     schema: ResetPasswordSchema,
     handler: authController.validateEmail
-  },
-
+  }
+  ,
+  {
+    path: '/auth/UpdateEmail',
+    method: 'post',
+    handler: authController.updateUserEmail
+  }
 ];
