@@ -16,7 +16,7 @@ import PackageTypeRoutes from './package_type/package_type.routes.js';
 import LabPackRoutes from './labpack/labpack.routes.js';
 import groupsRoutes from './groups/groups.routes.js';
 import participantsRoutes from './participants/participants.routes.js';
-
+import SelectedBadgeRoutes from './selected_standard/selected_standard.routes.js';
 export default [
   ...authRoutes,
   ...usersRoutes,
@@ -35,5 +35,6 @@ export default [
   ...PackageTypeRoutes,
   ...LabPackRoutes,
   ...groupsRoutes,
-  ...participantsRoutes
+  ...participantsRoutes,
+  ...SelectedBadgeRoutes
 ];

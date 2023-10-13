@@ -29,6 +29,9 @@ const standardsSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  file: {
+    type: Boolean
+  },
   property: {
     type: mongoose.Types.ObjectId,
     required: true,

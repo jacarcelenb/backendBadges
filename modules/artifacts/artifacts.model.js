@@ -72,6 +72,7 @@ const artifactsSchema = new mongoose.Schema({
   executed_software: {type: Boolean, default: false},
   data_manipulation: {type: Boolean,  default: false },
   norms_standards: {type: Boolean,  default: false },
+  is_generated: {type: Boolean, default: false},
   task: {
     type: mongoose.Types.ObjectId,
     ref: 'tasks',
@@ -81,7 +82,10 @@ const artifactsSchema = new mongoose.Schema({
     type: mongoose.Types.ObjectId,
     ref: 'experiments',
     required: true
-  }
+  },
+info:{
+  type: Array,
+}
 }, {collection: 'artifacts', timestamps: true});
 
 export const artifacts = mongoose.model('artifacts', artifactsSchema);

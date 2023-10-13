@@ -49,5 +49,11 @@ export default [
     method: 'put',
     private: true,
     handler: labpackController.labpack.update
+  },
+  {
+    path: '/updateRepo',
+    method: 'post',
+    private: true,
+    handler: labpackController.updateZenodoRepo
   }
 ];

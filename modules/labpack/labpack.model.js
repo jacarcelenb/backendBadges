@@ -35,6 +35,20 @@ const LabPackSchema = new mongoose.Schema({
     published:{
         type: Boolean,
     }
+    ,
+    submitedZenodo:{
+        type: Boolean,
+    } ,
+    id_zenodo:{
+        type: String,
+    },
+    tokenRepo:{
+        type: String,
+    }
+    ,
+    package_title:{
+        type: String,
+    }
 }, {collection: 'labpack', timestamps: true})
 
 const labpacks = mongoose.model('labpack', LabPackSchema);
