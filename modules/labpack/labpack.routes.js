@@ -52,7 +52,7 @@ export default [
   },
   {
     path: '/updateRepo',
-    method: 'put',
+    method: 'post',
     private: true,
     handler: labpackController.updateZenodoRepo
   }
