@@ -3233,3 +3233,5 @@
 {"level":"error","message":"CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"standard\" for model \"evaluations\" CastError: Cast to ObjectId failed for value \"undefined\" (type string) at path \"standard\" for model \"evaluations\"","timestamp":"2023-10-12T22:49:06.404Z"}
 {"level":"error","message":"ValidationError: file_size: Path `file_size` is required., file_format: Path `file_format` is required. ValidationError: file_size: Path `file_size` is required., file_format: Path `file_format` is required.","timestamp":"2023-10-13T00:16:40.142Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-10-13T01:16:40.376Z"}
+{"level":"info","message":"Connected to MongoDB Connected to MongoDB","timestamp":"2023-10-19T19:34:42.441Z"}
+{"level":"info","message":"Server started on port 4000 Server started on port 4000","timestamp":"2023-10-19T19:34:42.454Z"}
