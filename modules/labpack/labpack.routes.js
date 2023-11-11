@@ -55,5 +55,11 @@ export default [
     method: 'post',
     private: true,
     handler: labpackController.updateZenodoRepo
+  },
+   {
+    path: '/labpacks',
+    method: 'delete',
+    private: true,
+    handler: labpackController.labpack.delete
   }
 ];

@@ -722,3 +722,4 @@
 {"level":"error","message":"ValidationError: file_size: Path `file_size` is required., file_format: Path `file_format` is required. ValidationError: file_size: Path `file_size` is required., file_format: Path `file_format` is required.","timestamp":"2023-10-13T00:16:40.142Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-10-13T01:16:40.376Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-10-19T20:44:46.565Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-10-31T18:51:51.156Z"}
