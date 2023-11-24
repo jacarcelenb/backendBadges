@@ -7,5 +7,7 @@ export default {
   jwtSecret: process.env.JWT_SECRET,
   resetToken: process.env.RESET_TOKEN,
   API_KEY: process.env.API_KEY,
+  client_id: process.env.CLIENT_ID,
+  client_secret:process.env.CLIENT_SECRET,
   databaseURL: process.env.DATABASE_URL || 'mongodb://localhost:27017/badgesGo'
 };

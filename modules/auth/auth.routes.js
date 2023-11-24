@@ -26,5 +26,44 @@ export default [
     path: '/auth/UpdateEmail',
     method: 'post',
     handler: authController.updateUserEmail
+  },
+  {
+    path: '/auth/getTokenGithub',
+    method: 'post',
+    handler: authController.GetTokenGithub
   }
+  ,
+  {
+    path: '/auth/getRepoList/',
+    method: 'post',
+    handler: authController.getRepoUser
+  },
+
+  {
+    path: '/auth/createRepo/',
+    method: 'post',
+    handler: authController.CreateGithubRepository
+  },
+  {
+    path: '/auth/uploadFileRepository/',
+    method: 'post',
+    handler: authController.UploadFileRepository
+  },
+  {
+    path: '/auth/deleteFileRepository/',
+    method: 'post',
+    handler: authController.DeleteFileRepository
+  },
+  {
+    path: '/auth/updateRepository/',
+    method: 'post',
+    handler: authController.UpdateRepository
+  },
+  {
+    path: '/auth/deleteRepository/',
+    method: 'post',
+    handler: authController.DeleteRepository
+  },
+
+
 ];
