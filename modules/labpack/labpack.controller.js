@@ -28,10 +28,7 @@ export default {
     });
     let form = new FormData();
     form.append("file", file, body.name);
-    let url =
-      "https://zenodo.org/api/deposit/depositions/" +
-      body.id_zenodo +
-      "/files?access_token=UkO33J14iE8Svd4Ck4VvfT4BDuT25uwY0zwdRXiWIPHOr3iRJbegI7rc8Emh";
+    let url = "";
     if (token.length > 0 && body.id_zenodo > 0) {
       url =
         "https://zenodo.org/api/deposit/depositions/" +
@@ -51,8 +48,7 @@ export default {
   },
   createZenodoRepo: async (body) => {
     let tokenAPI = body.token.token;
-    let url =
-      "https://zenodo.org/api/deposit/depositions?access_token=UkO33J14iE8Svd4Ck4VvfT4BDuT25uwY0zwdRXiWIPHOr3iRJbegI7rc8Emh";
+    let url = "";
     if (tokenAPI.length > 0) {
       url =
         "https://zenodo.org/api/deposit/depositions?access_token=" + tokenAPI;
@@ -70,14 +66,15 @@ export default {
     return data;
   },
   updateZenodoRepo: async (body) => {
-    console.log("Body")
-    console.log(body);
     let tokenAPI = body.token;
     let id_zenodoRepo = body.id_zenodo;
     let url = "";
     if (tokenAPI.length > 0) {
       url =
-        "https://zenodo.org/api/deposit/depositions/" +id_zenodoRepo +"?access_token="+tokenAPI;
+        "https://zenodo.org/api/deposit/depositions/" +
+        id_zenodoRepo +
+        "?access_token=" +
+        tokenAPI;
     }
     const { token, ...DataRepo } = body;
     const { id_zenodo, ...DataUpdate } = DataRepo;
@@ -93,9 +90,8 @@ export default {
     return data;
   },
   publishZenodoRepo: async (body) => {
-
     let tokenAPI = body.token.token;
-    let url =""
+    let url = "";
     if (tokenAPI.length > 0 && body.id_zenodo > 0) {
       url =
         "https://zenodo.org/api/deposit/depositions/" +
@@ -116,7 +112,24 @@ export default {
       });
     return data;
   },
-  testing: async (body) => {
-    console.log(body);
+  generateZenodoToken: async (body) => {
+    let url = "https://zenodo.org/oauth/token";
+    const data = await axios
+      .post(url, {
+        client_id: body.client_id,
+        client_secret: body.client_secret,
+        grant_type: "authorization_code",
+        code: body.code,
+      })
+      .then(function (response) {
+        return response.data;
+      })
+      .catch(function (err) {
+        return err;
+      });
+    return data;
   },
+
+// delete file
+// update file but this not replace the file
 };

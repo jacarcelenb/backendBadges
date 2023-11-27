@@ -9,7 +9,6 @@ const LabPackSchema = new mongoose.Schema(
     },
     package_doi: {
       type: String,
-      required: true,
     },
     experiment: {
       type: mongoose.Types.ObjectId,
@@ -31,16 +30,13 @@ const LabPackSchema = new mongoose.Schema(
     package_url: {
       type: String,
     },
-    published: {
+    publishedZenodo:{
       type: Boolean,
     },
-    submitedZenodo: {
+    submitted:{
       type: Boolean,
     },
-    repoName: {
-      type: String,
-    },
-    owner: {
+    idDeposition: {
       type: String,
     },
   },
