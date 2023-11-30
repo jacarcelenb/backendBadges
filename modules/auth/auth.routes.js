@@ -40,27 +40,27 @@ export default [
   },
 
   {
-    path: '/auth/createRepo/',
+    path: '/auth/createRepo',
     method: 'post',
     handler: authController.CreateGithubRepository
   },
   {
-    path: '/auth/uploadFileRepository/',
+    path: '/auth/uploadFileRepository',
     method: 'post',
     handler: authController.UploadFileRepository
   },
   {
-    path: '/auth/deleteFileRepository/',
+    path: '/auth/deleteFileRepository',
     method: 'post',
     handler: authController.DeleteFileRepository
   },
   {
-    path: '/auth/updateRepository/',
+    path: '/auth/updateRepository',
     method: 'post',
     handler: authController.UpdateRepository
   },
   {
-    path: '/auth/deleteRepository/',
+    path: '/auth/deleteRepository',
     method: 'post',
     handler: authController.DeleteRepository
   },

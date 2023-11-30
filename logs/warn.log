@@ -722,3 +722,15 @@
 {"level":"error","message":"ValidationError: repository: Cast to ObjectId failed for value \"\" (type string) at path \"repository\" because of \"BSONTypeError\" ValidationError: repository: Cast to ObjectId failed for value \"\" (type string) at path \"repository\" because of \"BSONTypeError\"","timestamp":"2023-11-25T00:45:01.924Z"}
 {"level":"error","message":"ValidationError: repository: Cast to ObjectId failed for value \"\" (type string) at path \"repository\" because of \"BSONTypeError\" ValidationError: repository: Cast to ObjectId failed for value \"\" (type string) at path \"repository\" because of \"BSONTypeError\"","timestamp":"2023-11-25T00:48:19.734Z"}
 {"level":"error","message":"ValidationError: repository: Cast to ObjectId failed for value \"\" (type string) at path \"repository\" because of \"BSONTypeError\" ValidationError: repository: Cast to ObjectId failed for value \"\" (type string) at path \"repository\" because of \"BSONTypeError\"","timestamp":"2023-11-25T00:50:59.250Z"}
+{"level":"error","message":"SyntaxError: Unexpected token b in JSON at position 0 SyntaxError: Unexpected token b in JSON at position 0","timestamp":"2023-11-28T18:39:15.018Z"}
+{"level":"error","message":"SyntaxError: Unexpected token b in JSON at position 0 SyntaxError: Unexpected token b in JSON at position 0","timestamp":"2023-11-28T18:39:33.840Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"connect ETIMEDOUT 18.228.243.50:27017","timestamp":"2023-11-28T19:43:43.686Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"connect ETIMEDOUT 18.228.243.50:27017","timestamp":"2023-11-28T19:50:58.279Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'message') TypeError: Cannot read properties of undefined (reading 'message')","timestamp":"2023-11-28T20:10:45.779Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"connect ETIMEDOUT 18.228.243.50:27017","timestamp":"2023-11-28T20:12:23.478Z"}
+{"level":"error","message":"MongooseServerSelectionError: connect ETIMEDOUT 18.228.243.50:27017 MongooseServerSelectionError: connect ETIMEDOUT 18.228.243.50:27017","timestamp":"2023-11-28T20:17:48.328Z"}
+{"level":"error","message":"MongooseServerSelectionError: connect ETIMEDOUT 18.228.243.50:27017 MongooseServerSelectionError: connect ETIMEDOUT 18.228.243.50:27017","timestamp":"2023-11-28T20:17:55.916Z"}
+{"level":"error","message":"MongooseServerSelectionError: connect ETIMEDOUT 18.228.243.50:27017 MongooseServerSelectionError: connect ETIMEDOUT 18.228.243.50:27017","timestamp":"2023-11-28T20:17:59.420Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-11-28T20:21:24.566Z"}
+{"level":"error","message":"PayloadTooLargeError: request entity too large PayloadTooLargeError: request entity too large","timestamp":"2023-11-29T01:34:21.718Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-11-29T19:43:01.417Z"}

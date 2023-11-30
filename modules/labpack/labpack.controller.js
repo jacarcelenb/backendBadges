@@ -1,6 +1,7 @@
 import labpackModel from "./labpack.model.js";
 import axios from "axios";
 import fetch from "node-fetch";
+import vars from "../../config/vars.js";
 import { FormData } from "formdata-node";
 export default {
   labpack: labpackModel,
@@ -116,10 +117,11 @@ export default {
     let url = "https://zenodo.org/oauth/token";
     const data = await axios
       .post(url, {
-        client_id: body.client_id,
-        client_secret: body.client_secret,
-        grant_type: "authorization_code",
-        code: body.code,
+        "client_id": vars.client_id,
+        "client_secret": vars.client_secret,
+        "grant_type":'authorization_code',
+        "code": body.code,
+        'redirect_uri':"http://localhost:8080"
       })
       .then(function (response) {
         return response.data;

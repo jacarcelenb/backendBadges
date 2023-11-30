@@ -61,5 +61,10 @@ export default [
     method: 'delete',
     private: true,
     handler: labpackController.labpack.delete
+  },
+  {
+    path: '/ZenodoToken',
+    method: 'post',
+    handler: labpackController.generateZenodoToken
   }
 ];

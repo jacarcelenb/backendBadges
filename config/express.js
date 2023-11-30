@@ -25,8 +25,8 @@ routes_setup(routes, app, {
   path_prefix: '/api',
   after_middlewares: [
     // Parse application/JSON
-    bodyParser.json(),
-    bodyParser.urlencoded({extended: true})
+    bodyParser.json({limit: '50mb', extended: true}),
+    bodyParser.urlencoded({limit: "50mb", extended: true, parameterLimit:50000})
   ],
   // Mount locale middleware to handle locale changes
   before_middlewares: [localeMiddleware()],

@@ -78,53 +78,34 @@ export default {
   },
   CreateGithubRepository: async (body) => {
     let url = "https://api.github.com/user/repos";
-    console.log(body.token);
     const data = await axios
       .post(
         url,
         {
           name: body.name,
           description: body.description,
-          homepage: "https://github.com",
           private: false,
           is_template: false,
         },
         { headers: { Authorization: `Bearer ${body.token}` } }
       )
       .then(function (response) {
-        console.log(response.data);
         return response.data;
       })
       .catch(function (err) {
-        console.log(err);
         return err;
       });
     return data;
   },
 
   UploadFileRepository: async (body) => {
-    let url =
-      " https://api.github.com/repos/"+body.owner+"/"+body.repository+"/contents/" +
-      body.filename;
-    const filetoB64 = await fetch(body.url)
-      .then((response) => {
-        return response.arrayBuffer();
-      })
-      .then(async (buffer) => {
-        const nodeBuffer = Buffer.from(buffer);
-        const b64 = nodeBuffer.toString("base64");
-        return b64;
-      })
-      .catch((error) => {
-        return error.message;
-      });
-
+    let url = body.url + "/contents/" + body.filename;
     const data = await axios
       .put(
         url,
         {
           message: body.message,
-          content: filetoB64,
+          content: body.file,
         },
         { headers: { Authorization: `Bearer ${body.token}` } }
       )
@@ -139,9 +120,7 @@ export default {
   },
 
   DeleteFileRepository: async (body) => {
-    let url =
-      " https://api.github.com/repos/"+body.owner+"/"+body.repository+"/contents/" +
-      body.filename;
+    let url = body.url + "/contents/" + body.filename;
     const data = await axios
       .delete(url, {
         data: { message: body.message, sha: body.sha },
@@ -158,12 +137,11 @@ export default {
   },
 
   UpdateRepository: async (body) => {
-    let url = "https://api.github.com/repos/"+body.owner+"/"+body.repository;
+    let url = body.url;
     const data = await axios
       .patch(
         url,
-        { name: body.name,
-          description: body.description },
+        { name: body.name, description: body.description },
         { headers: { Authorization: `Bearer ${body.token}` } }
       )
       .then(function (response) {
@@ -176,15 +154,12 @@ export default {
   },
 
   DeleteRepository: async (body) => {
-    let url = "https://api.github.com/repos/"+body.owner+"/"+body.repository;
+    let url = body.url
     const data = await axios
-      .delete(
-        url,
-        {
-          data: { },
-          headers: { Authorization: `Bearer ${body.token}` },
-        }
-      )
+      .delete(url, {
+        data: {},
+        headers: { Authorization: `Bearer ${body.token}` },
+      })
       .then(function (response) {
         return response.data;
       })
