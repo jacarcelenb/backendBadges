@@ -743,3 +743,6 @@
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-11-28T20:21:24.566Z"}
 {"level":"error","message":"PayloadTooLargeError: request entity too large PayloadTooLargeError: request entity too large","timestamp":"2023-11-29T01:34:21.718Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-11-29T19:43:01.417Z"}
+{"level":"error","message":"Error: secretOrPrivateKey must have a value Error: secretOrPrivateKey must have a value","timestamp":"2023-12-04T12:57:24.065Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-12-04T12:58:12.015Z"}
+{"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-12-05T22:03:45.293Z"}

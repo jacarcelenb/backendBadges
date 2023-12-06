@@ -33,24 +33,18 @@ const LabPackSchema = new mongoose.Schema(
     user_url: {
       type: String,
     },
-    publishedGithub:{
+    publisheZenodo:{
       type: Boolean,
     },
-    owner:{
+    id_zenodo:{
       type: String,
-    }
-    ,
-    commit:{
+    },
+    submitted_zenodo:{
+      type: Boolean,
+    },
+    url_file:{
       type: String,
-    }
-    ,
-    sha:{
-      type: String,
-    }
-    ,
-    filename:{
-      type: String,
-    }
+    },
   },
   { collection: "labpack", timestamps: true }
 );
