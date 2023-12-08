@@ -33,11 +33,11 @@ const LabPackSchema = new mongoose.Schema(
     user_url: {
       type: String,
     },
-    publisheZenodo:{
+    published_zenodo:{
       type: Boolean,
     },
     id_zenodo:{
-      type: String,
+      type: Number,
     },
     submitted_zenodo:{
       type: Boolean,

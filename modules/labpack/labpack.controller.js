@@ -1,34 +1,18 @@
 import labpackModel from "./labpack.model.js";
 import axios from "axios";
 import fetch from "node-fetch";
-import vars from "../../config/vars.js";
 import { FormData } from "formdata-node";
 export default {
   labpack: labpackModel,
-  test: async function getRepos(param) {
-    let url = `https://zenodo.org/api/deposit/depositions?access_token=UkO33J14iE8Svd4Ck4VvfT4BDuT25uwY0zwdRXiWIPHOr3iRJbegI7rc8Emh`;
-    if (param.token.length > 0) {
-      url =
-        "https://zenodo.org/api/deposit/depositions?access_token=" +
-        param.token;
-    }
-    const data = await axios
-      .get(url)
-      .then(function (response) {
-        return { status: response.status, data: response.data };
-      })
-      .catch(function (err) {
-        return err;
-      });
-    return data;
-  },
   uploadFile: async (body) => {
-    let token = body.token.token;
-    const file = await fetch(body.url).then((response) => {
-      return response.blob();
-    });
+    let token = body.token;
+    const base64Data = body.content;
+    const base64Response = await fetch(
+      `data:application/zip;base64,${base64Data}`
+    );
+    const file = await base64Response.blob();
     let form = new FormData();
-    form.append("file", file, body.name);
+    form.append("file", file, body.filename);
     let url = "";
     if (token.length > 0 && body.id_zenodo > 0) {
       url =
@@ -48,7 +32,7 @@ export default {
     return data;
   },
   createZenodoRepo: async (body) => {
-    let tokenAPI = body.token.token;
+    let tokenAPI = body.token;
     let url = "";
     if (tokenAPI.length > 0) {
       url =
@@ -77,10 +61,10 @@ export default {
         "?access_token=" +
         tokenAPI;
     }
-    const { token, ...DataRepo } = body;
-    const { id_zenodo, ...DataUpdate } = DataRepo;
     const data = await axios
-      .put(url, DataUpdate)
+      .put(url, {
+        metadata: body.metadata,
+      })
       .then(function (response) {
         return response.data;
       })
@@ -91,7 +75,7 @@ export default {
     return data;
   },
   publishZenodoRepo: async (body) => {
-    let tokenAPI = body.token.token;
+    let tokenAPI = body.token;
     let url = "";
     if (tokenAPI.length > 0 && body.id_zenodo > 0) {
       url =
@@ -104,7 +88,7 @@ export default {
     const repoData = {};
 
     const data = await axios
-      .post(url, repoData)
+      .post(url, {})
       .then(function (response) {
         return response.data;
       })
@@ -113,16 +97,14 @@ export default {
       });
     return data;
   },
-  generateZenodoToken: async (body) => {
-    let url = "https://zenodo.org/oauth/token";
+  DeleteFileZenodo: async (body) => {
+    let tokenAPI = body.token;
+    let url = "";
+    if (tokenAPI.length > 0) {
+      url = body.url + "?access_token=" + tokenAPI;
+    }
     const data = await axios
-      .post(url, {
-        "client_id": vars.client_id,
-        "client_secret": vars.client_secret,
-        "grant_type":'authorization_code',
-        "code": body.code,
-        'redirect_uri':"http://localhost:8080"
-      })
+      .delete(url, {})
       .then(function (response) {
         return response.data;
       })
@@ -132,6 +114,47 @@ export default {
     return data;
   },
 
-// delete file
-// update file but this not replace the file
+  NewVersionZenodo: async (body) => {
+    let tokenAPI = body.token;
+    let url = "";
+    if (tokenAPI.length > 0 && body.id_zenodo > 0) {
+      url =
+        "https://zenodo.org/api/deposit/depositions/" +
+        body.id_zenodo +
+        "/actions/newversion?access_token=" +
+        tokenAPI;
+    }
+
+    const metadata = body.metadata;
+    const data = await axios
+      .post(url, { metadata })
+      .then(function (response) {
+        return response.data;
+      })
+      .catch(function (err) {
+        return err;
+      });
+    return data;
+  },
+
+  AllowEditZenodo: async (body) => {
+    let tokenAPI = body.token;
+    let url = "";
+    if (tokenAPI.length > 0 && body.id_zenodo > 0) {
+      url =
+        "https://zenodo.org/api/deposit/depositions/" +
+        body.id_zenodo +
+        "/actions/edit?access_token=" +
+        tokenAPI;
+    }
+    const data = await axios
+      .post(url, {})
+      .then(function (response) {
+        return response.data;
+      })
+      .catch(function (err) {
+        return err;
+      });
+    return data;
+  },
 };

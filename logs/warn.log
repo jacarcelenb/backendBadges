@@ -737,3 +737,26 @@
 {"level":"error","message":"Error: secretOrPrivateKey must have a value Error: secretOrPrivateKey must have a value","timestamp":"2023-12-04T12:57:24.065Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-12-04T12:58:12.015Z"}
 {"level":"error","message":"uncaughtException uncaughtException","timestamp":"2023-12-05T22:03:45.293Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'length') TypeError: Cannot read properties of undefined (reading 'length')","timestamp":"2023-12-06T00:50:22.831Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'length') TypeError: Cannot read properties of undefined (reading 'length')","timestamp":"2023-12-06T00:53:25.358Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'length') TypeError: Cannot read properties of undefined (reading 'length')","timestamp":"2023-12-06T00:59:50.077Z"}
+{"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'length') TypeError: Cannot read properties of undefined (reading 'length')","timestamp":"2023-12-06T01:01:16.789Z"}
+{"level":"error","message":"ReferenceError: Blob is not defined ReferenceError: Blob is not defined","timestamp":"2023-12-06T19:08:05.899Z"}
+{"level":"error","message":"ReferenceError: Blob is not defined ReferenceError: Blob is not defined","timestamp":"2023-12-06T19:10:25.064Z"}
+{"level":"error","message":"ReferenceError: Blob is not defined ReferenceError: Blob is not defined","timestamp":"2023-12-06T19:12:12.257Z"}
+{"level":"error","message":"ReferenceError: Blob is not defined ReferenceError: Blob is not defined","timestamp":"2023-12-06T19:42:20.679Z"}
+{"level":"error","message":"TypeError [ERR_INVALID_URL]: Invalid URL TypeError [ERR_INVALID_URL]: Invalid URL","timestamp":"2023-12-06T19:49:57.747Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:43:25.837Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:48:22.323Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:48:39.738Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:48:55.129Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:48:57.445Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:48:58.757Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:49:03.053Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:50:05.723Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:50:13.137Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:50:21.448Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:50:34.588Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:50:50.264Z"}
+{"level":"error","message":"unhandledRejection unhandledRejection","obj":"querySrv ECONNREFUSED _mongodb._tcp.badgesgo.zuxdzdh.mongodb.net","timestamp":"2023-12-06T20:51:29.693Z"}
+{"level":"error","message":"CastError: Cast to ObjectId failed for value \"{ _id: 'null' }\" (type Object) at path \"_id\" for model \"labpack\" CastError: Cast to ObjectId failed for value \"{ _id: 'null' }\" (type Object) at path \"_id\" for model \"labpack\"","timestamp":"2023-12-07T01:30:53.724Z"}

@@ -33,12 +33,6 @@ export default [
     handler: labpackController.publishZenodoRepo
   },
   {
-    path: '/labpacktesting',
-    method: 'post',
-    private: true,
-    handler: labpackController.testing
-  },
-  {
     path: '/labpack',
     method: 'post',
     private: true,
@@ -53,18 +47,33 @@ export default [
   {
     path: '/updateRepo',
     method: 'post',
-    private: true,
+    private:false,
     handler: labpackController.updateZenodoRepo
+  }
+  ,
+  {
+    path: '/newVersion',
+    method: 'post',
+    private:false,
+    handler: labpackController.NewVersionZenodo
+  }
+  ,
+  {
+    path: '/deleteFileRepo',
+    method: 'post',
+    private:false,
+    handler: labpackController.DeleteFileZenodo
+  },
+  {
+    path: '/allowEditRepo',
+    method: 'post',
+    private:false,
+    handler: labpackController.AllowEditZenodo
   },
    {
     path: '/labpacks',
     method: 'delete',
     private: true,
     handler: labpackController.labpack.delete
-  },
-  {
-    path: '/ZenodoToken',
-    method: 'post',
-    handler: labpackController.generateZenodoToken
   }
 ];
