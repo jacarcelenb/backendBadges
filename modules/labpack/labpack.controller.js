@@ -32,6 +32,7 @@ export default {
     return data;
   },
   createZenodoRepo: async (body) => {
+    console.log(body)
     let tokenAPI = body.token;
     let url = "";
     if (tokenAPI.length > 0) {
