@@ -74,6 +74,13 @@ const artifactsSchema = new mongoose.Schema(
     data_manipulation: { type: Boolean, default: false },
     norms_standards: { type: Boolean, default: false },
     is_generated: { type: Boolean, default: false },
+    participant_demographic_surveys: { type: Boolean, default: false },
+    training_artifacts: { type: Boolean, default: false },
+    measuring_instruments: { type: Boolean, default: false },
+    conceptual_models: { type: Boolean, default: false },
+    raw_data: { type: Boolean, default: false },
+    curated_data: { type: Boolean, default: false },
+    analysis_scripts: { type: Boolean, default: false },
     task: {
       type: mongoose.Types.ObjectId,
       ref: "tasks",

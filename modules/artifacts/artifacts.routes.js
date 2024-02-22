@@ -56,3 +56,4 @@ export default [
     handler: artifactsController.artifactAMC.find
   }
 ];
+
